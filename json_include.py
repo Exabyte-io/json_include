@@ -117,7 +117,7 @@ class JSONInclude(object):
                     # add data under include_key if it is not a dictionary
                     if not isinstance(_data, dict): _data = {include_key: _data}
                     o.update(self._make_unique(_data, make_unique_key) if make_unique_key else _data)
-            include_text_keys = [key for key in list(o.keys())
+            include_text_keys = [key for key in o.keys()
                                  if isinstance(o[key], str) and INCLUDE_TEXT_PATTERN.search(o[key])]
             for key in include_text_keys:
                 include_filename = self._get_include_name(o[key], INCLUDE_TEXT_PATTERN)
