@@ -13,7 +13,7 @@ setup(
     author='Exabyte Inc.',
     author_email='info@exabyte.io',
     py_modules=['json_include'],
-    python_requires='>2.7, <3',
+    python_requires='>3.6',
     classifiers=[
         'Programming Language :: Python',
         'Development Status :: 3 - Alpha',
