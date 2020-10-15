@@ -63,7 +63,7 @@ class JSONInclude(object):
             original = obj[key]
             replacement = obj[key] + "-" + self._random_string()
             obj[key] = replacement
-        for k, v in obj.items():
+        for k, v in obj.iteritems():
             if original and v == original:
                 obj[k] = replacement
             if isinstance(v, dict):
