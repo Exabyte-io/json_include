@@ -5,7 +5,7 @@ with open('./README.rst', 'r') as f:
 
 setup(
     name='exabyte_json_include',
-    version='2.0.0',
+    version='2020.10.19',
     description='An extension for json_include to support file inclusion',
     long_description=long_description,
     long_description_content_type='text/x-rst',
