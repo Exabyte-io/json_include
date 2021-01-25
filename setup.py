@@ -1,11 +1,13 @@
 from setuptools import setup
+import versioneer
 
 with open('./README.rst', 'r') as f:
     long_description = f.read()
 
 setup(
     name='exabyte_json_include',
-    version='2020.10.19',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     description='An extension for json_include to support file inclusion',
     long_description=long_description,
     long_description_content_type='text/x-rst',
